@@ -34,3 +34,6 @@ EXPOSE 4369 5551 5552 5671 5672 15671 15672 25672
 USER 1001
 ENTRYPOINT [ "/opt/bitnami/scripts/rabbitmq/entrypoint.sh" ]
 CMD [ "/opt/bitnami/scripts/rabbitmq/run.sh" ]
+
+
+COPY ../init-cluster.sh /docker-entrypoint-initdb.d
